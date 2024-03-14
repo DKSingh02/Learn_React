@@ -3,7 +3,7 @@ import LifecycleOne from './react-lifecycles/components/react-lifecycle-one';
 import { WelcomeClassComponent, WelcomeFunctionComponent } from './react-props/components';
 import { GreetingFromClassComponent, GreetingFromFunctionalComponent } from './react-conditions/components';
 import { FruitListClassComponent, FruitListFunctionalComponent } from './rendering-lists/index';
-import { RefExampleComponent, RefParentComponent } from './react-refs';
+import { RefExampleComponent, RefParentComponent, ForwardRefParentComponent } from './react-refs';
 
 function App() {
   return (
@@ -15,7 +15,8 @@ function App() {
       {/* <GreetingFromFunctionalComponent name='Diwakar' isLoggedIn={true} /> */}
       {/* <FruitListFunctionalComponent /> */}
       {/* <RefExampleComponent /> */}
-      <RefParentComponent />
+      {/* <RefParentComponent /> */}
+      <ForwardRefParentComponent />
     </div>
   );
 }
